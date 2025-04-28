@@ -3,7 +3,7 @@
     get_header();
 
     get_template_part('components/hero-banner');
-    get_template_part('components/our-feature');
+    get_template_part('components/our-features');
     get_template_part('components/about-component');
     get_template_part('components/service-component');
     get_template_part('components/faq-component');

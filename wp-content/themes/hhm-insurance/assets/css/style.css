@@ -157,6 +157,10 @@
     color: var(--bs-primary);
 }
 
+.main-header {
+    gap: 20px;
+    padding: 20px;
+}
 @media (max-width: 991px) {
     .navbar {
         padding: 20px 0;
