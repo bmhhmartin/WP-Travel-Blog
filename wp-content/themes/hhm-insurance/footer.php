@@ -5,19 +5,9 @@
                         <div class="mb-5">
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-6 col-xl-5">
-                                    <div class="footer-item">
-                                        <a href="index.html" class="p-0">
-                                            <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3>
-                                            <!-- <img src="img/logo.png" alt="Logo"> -->
-                                        </a>
-                                        <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-                                        <div class="footer-btn d-flex">
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
+                                    <?php
+                                        
+                                    ?>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-3">
                                     <div class="footer-item">
@@ -87,47 +77,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
-                            <div class="row g-0">
-                                <div class="col-12">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Address</h4>
-                                                    <p class="mb-0">123 Street New York.USA</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-envelope fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Mail Us</h4>
-                                                    <p class="mb-0">info@example.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Telephone</h4>
-                                                    <p class="mb-0">(+012) 3456 7890</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="col-xl-3">
@@ -164,13 +113,10 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-body"><a href="<?php home_url();?>" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i><?php echo bloginfo(); ?></a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-start text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                        Developed by<a class="border-bottom text-white" href="https://bmhhmartin.vercel.app/"> bmhhmartin</a>
                     </div>
                 </div>
             </div>
