@@ -809,17 +809,23 @@
     flex-direction: column;
 }
 
-.footer .footer-item a {
+
+.footer .footer-item .menu{
+    list-style: none !important;
+    padding: 0 !important;
+    background: red !important;
+}
+
+.footer .footer-menu .menu li a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: var(--bs-white);
     transition: 0.5s;
 }
 
 .footer .footer-item p {
     line-height: 35px;
 }
-
-.footer .footer-item a:hover {
+.footer .footer-item .menu li a:hover {
     color: var(--bs-primary);
 }
 
@@ -879,6 +885,10 @@
 
 .footer .footer-item .footer-btn a:hover i {
     color: var(--bs-white);
+}
+
+.footer-left figure img{
+    max-width: 120px;
 }
 /*** Footer End ***/
 

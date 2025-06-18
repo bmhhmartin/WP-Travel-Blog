@@ -4,5 +4,6 @@
 
     get_template_part('components/common-banner');
     get_template_part('components/service-component');
-
+    get_template_part('components/testimonial-component');
+    get_template_part('components/team-component');
     get_footer();
