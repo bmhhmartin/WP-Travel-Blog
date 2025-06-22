@@ -14,7 +14,7 @@ include get_theme_file_path( './options/theme-support.php' );
 include get_theme_file_path( './options/header-info.php' );
 include get_theme_file_path( './options/enqueue-files.php' );
 include get_theme_file_path( './widgets/footer-widget.php' );
-
+include get_theme_file_path( './inc/acf-option.php' );
 
 /**
  * Sample translation-ready string

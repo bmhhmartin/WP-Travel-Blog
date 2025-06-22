@@ -598,8 +598,31 @@
     border-top-right-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
 }
-
+.tag__cover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.tag__cover .tag__list {
+     margin: 0;
+     list-style: none;
+     display: flex;
+    flex-wrap: wrap;
+     gap: 5px;
+     padding: 0;
+     justify-content: flex-end;
+ }
+.tag__cover .tag__list li a {
+    background: #015fc9;
+    padding: 5px 8px;
+    color: white;
+    font-size: 14px;
+}
 .blog .blog-item .blog-img img {
     transition: 0.5s;
 }
