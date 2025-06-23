@@ -19,4 +19,33 @@
             'position'       => 6,
             'icon_url'       => 'dashicons-admin-users',
         ));
+
+        acf_add_options_page(array(
+            'page_title'    => 'Service Options',
+            'menu_title'    => 'Service Options',
+            'menu_slug'     => 'theme-service-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => true,
+            'position'       => 7,
+            'icon_url'       => 'dashicons-pressthis',
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Service Top Part',
+            'menu_title'    => 'Service Top Part',
+            'menu_slug'     => 'theme-service-top-settings',
+            'parent_slug'   => 'theme-service-settings',
+            'capability'    => 'edit_posts',
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Service Cards',
+            'menu_title'    => 'Service Cards',
+            'menu_slug'     => 'theme-service-cards-settings',
+            'parent_slug'   => 'theme-service-settings',
+            'capability'    => 'edit_posts',
+        ));
+
+
+
     }
