@@ -105,7 +105,41 @@
             'parent_slug'   => 'theme-testimonial-settings',
             'capability'    => 'edit_posts',
         ));
+        //testimonial options ends
+        acf_add_options_page(array(
+            'page_title'    => 'Header Options',
+            'menu_title'    => 'Header Options',
+            'menu_slug'     => 'theme-header-option-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => true,
+            'position'       => 9,
+            'icon_url'       => 'dashicons-rss',
+        ));
 
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Header Contact',
+            'menu_title'    => 'Header Contact',
+            'menu_slug'     => 'theme-header-contact-settings',
+            'parent_slug'   => 'theme-header-option-settings',
+            'capability'    => 'edit_posts',
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Header Address',
+            'menu_title'    => 'Header Address',
+            'menu_slug'     => 'theme-header-address-settings',
+            'parent_slug'   => 'theme-header-option-settings',
+            'capability'    => 'edit_posts',
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Header Media Links',
+            'menu_title'    => 'Header Media Links',
+            'menu_slug'     => 'theme-header-media-settings',
+            'parent_slug'   => 'theme-header-option-settings',
+            'capability'    => 'edit_posts',
+        ));
+        //header options ends
 
 
 
