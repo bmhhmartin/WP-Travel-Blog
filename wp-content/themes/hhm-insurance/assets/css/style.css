@@ -820,7 +820,9 @@
     z-index: 9;
 }
 /*** Contact End ***/
-
+.object-cover{
+    object-fit: cover;
+}
 
 /*** Footer Start ***/
 .footer {

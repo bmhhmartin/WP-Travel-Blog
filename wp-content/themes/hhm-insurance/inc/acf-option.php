@@ -79,6 +79,33 @@
             'parent_slug'   => 'theme-service-settings',
             'capability'    => 'edit_posts',
         ));
+        //service options ends
+        acf_add_options_page(array(
+            'page_title'    => 'Testimonial Options',
+            'menu_title'    => 'Testimonial Options',
+            'menu_slug'     => 'theme-testimonial-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => true,
+            'position'       => 8,
+            'icon_url'       => 'dashicons-testimonial',
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Testimonial Top Part',
+            'menu_title'    => 'Testimonial Top Part',
+            'menu_slug'     => 'theme-testimonial-top-settings',
+            'parent_slug'   => 'theme-testimonial-settings',
+            'capability'    => 'edit_posts',
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Testimonial Cards',
+            'menu_title'    => 'Testimonial Cards',
+            'menu_slug'     => 'theme-testimonial-cards-settings',
+            'parent_slug'   => 'theme-testimonial-settings',
+            'capability'    => 'edit_posts',
+        ));
+
 
 
 
