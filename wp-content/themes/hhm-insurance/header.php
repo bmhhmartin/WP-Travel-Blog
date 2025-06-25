@@ -75,16 +75,14 @@
         <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light"> 
+                    <?php 
+                        $header_logo = get_field('header_logo', 'option');
+                    ?>
                     <a href="<?php echo home_url();?>" class="navbar-brand p-0">
                         <?php
-                            $custom_logo_id = get_theme_mod( 'custom_logo' );
-                            $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                            if ( has_custom_logo() ) {
-                                echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-                            } else {
-                                echo '<p>' . 'Insurance' . '</p>';
-                            }
-                        ?>
+                        if( $header_logo ) {
+                            echo wp_get_attachment_image( $header_logo );
+                        } ?>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars"></span>
@@ -110,9 +108,13 @@
                         </a>
 
                         <div class="d-flex flex-column ms-3">
-                            <span><?php echo esc_html(get_theme_mod('header_call_text', 'Call to Our Experts')); ?></span>
-                            <a href="tel:<?php echo esc_attr(get_theme_mod('header_phone_number', '+0123 456 7890')); ?>">
-                                <span class="text-dark"><?php echo esc_html(get_theme_mod('header_phone_number', '+0123 456 7890')); ?></span>
+                            <?php
+                                $header_information = get_field('header_information', 'option');
+                                $header_contact = get_field('header_contact', 'option');
+                            ?>
+                            <span><?php echo $header_information;?></span>
+                            <a href="tel:<?php echo $header_contact;?>">
+                                <span class="text-dark"><?php echo $header_contact;?></span>
                             </a>
                         </div>
                     </div>

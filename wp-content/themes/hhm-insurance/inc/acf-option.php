@@ -117,6 +117,14 @@
         ));
 
         acf_add_options_sub_page(array(
+            'page_title'    => 'Header Logo',
+            'menu_title'    => 'Header Logo',
+            'menu_slug'     => 'theme-header-logo-settings',
+            'parent_slug'   => 'theme-header-option-settings',
+            'capability'    => 'edit_posts',
+        ));
+
+        acf_add_options_sub_page(array(
             'page_title'    => 'Header Contact',
             'menu_title'    => 'Header Contact',
             'menu_slug'     => 'theme-header-contact-settings',
